@@ -22,11 +22,11 @@ requirements:
     # - {{ compiler('cxx') }}
     - cmake
     - ninja
-    - libgdal
     - cairo
+    - libgdal {{ libgdal }}
   run:
-    - libgdal
     - cairo
+    - libgdal {{ libgdal }}
 
 test:
   commands:
